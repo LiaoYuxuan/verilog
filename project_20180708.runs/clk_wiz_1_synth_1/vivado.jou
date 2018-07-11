@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sun Jul  8 21:54:28 2018
+# Process ID: 23292
+# Current directory: D:/vivadoproject/project_20180708/project_20180708.runs/clk_wiz_1_synth_1
+# Command line: vivado.exe -log clk_wiz_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_1.tcl
+# Log file: D:/vivadoproject/project_20180708/project_20180708.runs/clk_wiz_1_synth_1/clk_wiz_1.vds
+# Journal file: D:/vivadoproject/project_20180708/project_20180708.runs/clk_wiz_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source clk_wiz_1.tcl -notrace

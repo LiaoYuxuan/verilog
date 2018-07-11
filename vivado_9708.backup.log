@@ -1,0 +1,58 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Mon Jul  9 16:03:28 2018
+# Process ID: 9708
+# Current directory: D:/vivadoproject/project_20180708(1)/project_20180708
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14476 D:\vivadoproject\project_20180708(1)\project_20180708\project_20180708.xpr
+# Log file: D:/vivadoproject/project_20180708(1)/project_20180708/vivado.log
+# Journal file: D:/vivadoproject/project_20180708(1)/project_20180708\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivadoproject/project_20180708(1)/project_20180708/project_20180708.xpr
+INFO: [Project 1-313] Project file moved from 'D:/vivadoproject/project_20180708' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Personal Documents/Digital-Design-Lab-master/Chapter_12/Digital_camera/files/HDL_source/IP_Catalog'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 817.016 ; gain = 54.836
+update_compile_order -fileset sources_1
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.1
+  **** Build date : Apr 14 2017-19:11:07
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 834.648 ; gain = 0.000
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183714730A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183714730A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714730A
+set_property PROGRAM.FILE {D:/vivadoproject/project_20180708(1)/project_20180708/project_20180708.runs/impl_1/design_1.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {D:/vivadoproject/project_20180708(1)/project_20180708/project_20180708.runs/impl_1/design_1.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {D:/vivadoproject/project_20180708(1)/project_20180708/project_20180708.runs/impl_1/design_1.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/vivadoproject/project_20180708(1)/project_20180708/project_20180708.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property PROBES.FILE {D:/vivadoproject/project_20180708(1)/project_20180708/project_20180708.runs/impl_1/design_1.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {D:/vivadoproject/project_20180708(1)/project_20180708/project_20180708.runs/impl_1/design_1.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/vivadoproject/project_20180708(1)/project_20180708/project_20180708.runs/impl_1/design_1.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/vivadoproject/project_20180708(1)/project_20180708/project_20180708.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {D:/vivadoproject/project_20180708(1)/project_20180708/project_20180708.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul  9 16:05:42 2018...

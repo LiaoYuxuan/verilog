@@ -1,0 +1,743 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Wed Jul 11 10:47:59 2018
+# Process ID: 12324
+# Current directory: D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1
+# Command line: vivado.exe -log design_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1.tcl
+# Log file: D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/design_1.vds
+# Journal file: D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1.tcl -notrace
+Command: synth_design -top design_1 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3136 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 324.203 ; gain = 69.844
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/design_1.v:23]
+INFO: [Synth 8-638] synthesizing module 'IICctrl_0' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/realtime/IICctrl_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'IICctrl_0' (1#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/realtime/IICctrl_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (2#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'cam_ov7670_ov7725_0' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/realtime/cam_ov7670_ov7725_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'cam_ov7670_ov7725_0' (3#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/realtime/cam_ov7670_ov7725_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'design_1_cam_ov7670_ov7725_0_0' of module 'cam_ov7670_ov7725_0' requires 10 connections, but only 8 given [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/design_1.v:186]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (4#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'Clock_Divider_2' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/Clock_Divider_2.v:23]
+	Parameter M bound to: 100000000 - type: integer 
+	Parameter N bound to: 25000 - type: integer 
+	Parameter H bound to: 50000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Clock_Divider_2' (5#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/Clock_Divider_2.v:23]
+INFO: [Synth 8-638] synthesizing module 'ov7725_regData_0' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/realtime/ov7725_regData_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ov7725_regData_0' (6#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/realtime/ov7725_regData_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'ram_read_0' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/realtime/ram_read_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ram_read_0' (7#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/realtime/ram_read_0_stub.v:6]
+WARNING: [Synth 8-689] width (11) of port connection 'vga_h_cnt' does not match port width (12) of module 'ram_read_0' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/design_1.v:216]
+WARNING: [Synth 8-689] width (10) of port connection 'vga_v_cnt' does not match port width (11) of module 'ram_read_0' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/design_1.v:218]
+INFO: [Synth 8-638] synthesizing module 'vga_0' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/realtime/vga_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'vga_0' (8#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/realtime/vga_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'rgb_to_ycbcr' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/rgb_to_ycbcr.v:23]
+	Parameter para_0183_10b bound to: 10'b0000101111 
+	Parameter para_0614_10b bound to: 10'b0010011101 
+	Parameter para_0062_10b bound to: 10'b0000010000 
+	Parameter para_0101_10b bound to: 10'b0000011010 
+	Parameter para_0338_10b bound to: 10'b0001010110 
+	Parameter para_0439_10b bound to: 10'b0001110000 
+	Parameter para_0399_10b bound to: 10'b0001100110 
+	Parameter para_0040_10b bound to: 10'b0000001010 
+	Parameter para_16_18b bound to: 18'b000001000000000000 
+	Parameter para_128_18b bound to: 18'b001000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'rgb_to_ycbcr' (9#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/rgb_to_ycbcr.v:23]
+INFO: [Synth 8-638] synthesizing module 'shifter' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/shifter.v:24]
+INFO: [Synth 8-256] done synthesizing module 'shifter' (10#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/shifter.v:24]
+INFO: [Synth 8-638] synthesizing module 'divide' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/divide.v:24]
+INFO: [Synth 8-256] done synthesizing module 'divide' (11#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/divide.v:24]
+INFO: [Synth 8-638] synthesizing module 'shumaguan' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/shumaguan.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/shumaguan.v:95]
+WARNING: [Synth 8-567] referenced signal 'duan_1' should be on the sensitivity list [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/shumaguan.v:94]
+WARNING: [Synth 8-567] referenced signal 'D3' should be on the sensitivity list [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/shumaguan.v:94]
+WARNING: [Synth 8-567] referenced signal 'D2' should be on the sensitivity list [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/shumaguan.v:94]
+WARNING: [Synth 8-567] referenced signal 'D1' should be on the sensitivity list [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/shumaguan.v:94]
+INFO: [Synth 8-256] done synthesizing module 'shumaguan' (12#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/shumaguan.v:24]
+INFO: [Synth 8-638] synthesizing module 'button1' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/button1.v:24]
+INFO: [Synth 8-256] done synthesizing module 'button1' (13#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/button1.v:24]
+INFO: [Synth 8-638] synthesizing module 'button2' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/button2.v:24]
+INFO: [Synth 8-256] done synthesizing module 'button2' (14#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/button2.v:24]
+INFO: [Synth 8-638] synthesizing module 'button3' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/button3.v:24]
+INFO: [Synth 8-256] done synthesizing module 'button3' (15#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/button3.v:24]
+INFO: [Synth 8-638] synthesizing module 'boundry_tracking' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/boundry_tracking.v:24]
+INFO: [Synth 8-256] done synthesizing module 'boundry_tracking' (16#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/boundry_tracking.v:24]
+INFO: [Synth 8-638] synthesizing module 'button' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/button.v:23]
+INFO: [Synth 8-638] synthesizing module 'debounce' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/debounce.v:23]
+	Parameter NDELAY bound to: 650000 - type: integer 
+	Parameter NBITS bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'debounce' (17#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/debounce.v:23]
+INFO: [Synth 8-256] done synthesizing module 'button' (18#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/button.v:23]
+INFO: [Synth 8-638] synthesizing module 'FSM' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/FSM.v:23]
+WARNING: [Synth 8-6014] Unused sequential element button_2_reg was removed.  [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/FSM.v:55]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (19#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/FSM.v:23]
+INFO: [Synth 8-638] synthesizing module 'top_flyinglogo' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/top_flyinglogo.v:23]
+	Parameter logo_length bound to: 10'b0010111011 
+	Parameter logo_hight bound to: 10'b0001010011 
+INFO: [Synth 8-638] synthesizing module 'dcm_25m' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/realtime/dcm_25m_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'dcm_25m' (20#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/realtime/dcm_25m_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (21#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/realtime/blk_mem_gen_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'u1' of module 'blk_mem_gen_1' requires 5 connections, but only 3 given [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/top_flyinglogo.v:65]
+INFO: [Synth 8-638] synthesizing module 'vga_640x480' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/vga_640x480.v:23]
+	Parameter h_frontporch bound to: 96 - type: integer 
+	Parameter h_active bound to: 144 - type: integer 
+	Parameter h_backporch bound to: 784 - type: integer 
+	Parameter h_total bound to: 800 - type: integer 
+	Parameter v_frontporch bound to: 2 - type: integer 
+	Parameter v_active bound to: 35 - type: integer 
+	Parameter v_backporch bound to: 515 - type: integer 
+	Parameter v_total bound to: 525 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vga_640x480' (22#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/vga_640x480.v:23]
+INFO: [Synth 8-638] synthesizing module 'debounce_vga' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/debounce_vga.v:23]
+INFO: [Synth 8-256] done synthesizing module 'debounce_vga' (23#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/debounce_vga.v:23]
+INFO: [Synth 8-226] default block is never used [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/top_flyinglogo.v:204]
+WARNING: [Synth 8-6014] Unused sequential element flag_edge_reg was removed.  [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/top_flyinglogo.v:154]
+INFO: [Synth 8-256] done synthesizing module 'top_flyinglogo' (24#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/top_flyinglogo.v:23]
+INFO: [Synth 8-638] synthesizing module 'divide_duoshuzi' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/divide_duoshuzi.v:23]
+INFO: [Synth 8-256] done synthesizing module 'divide_duoshuzi' (25#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/divide_duoshuzi.v:23]
+INFO: [Synth 8-638] synthesizing module 'shifter_duoshuzi' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/shifter_duoshuzi.v:23]
+INFO: [Synth 8-256] done synthesizing module 'shifter_duoshuzi' (26#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/shifter_duoshuzi.v:23]
+INFO: [Synth 8-638] synthesizing module 'shumaguan_duoshuzi' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/shumaguan_duoshuzi.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/shumaguan_duoshuzi.v:68]
+WARNING: [Synth 8-567] referenced signal 'duan_2' should be on the sensitivity list [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/shumaguan_duoshuzi.v:67]
+WARNING: [Synth 8-567] referenced signal 'duan_1' should be on the sensitivity list [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/shumaguan_duoshuzi.v:67]
+INFO: [Synth 8-256] done synthesizing module 'shumaguan_duoshuzi' (27#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/shumaguan_duoshuzi.v:23]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (28#1) [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/design_1.v:23]
+WARNING: [Synth 8-3331] design divide_duoshuzi has unconnected port gray[3]
+WARNING: [Synth 8-3331] design divide_duoshuzi has unconnected port gray[2]
+WARNING: [Synth 8-3331] design divide_duoshuzi has unconnected port gray[1]
+WARNING: [Synth 8-3331] design divide_duoshuzi has unconnected port gray[0]
+WARNING: [Synth 8-3331] design FSM has unconnected port button_back
+WARNING: [Synth 8-3331] design divide has unconnected port gray[3]
+WARNING: [Synth 8-3331] design divide has unconnected port gray[2]
+WARNING: [Synth 8-3331] design divide has unconnected port gray[1]
+WARNING: [Synth 8-3331] design divide has unconnected port gray[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 365.281 ; gain = 110.922
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 365.281 ; gain = 110.922
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/dcp19/blk_mem_gen_1_in_context.xdc] for cell 'top_flyinglogo/u1'
+Finished Parsing XDC File [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/dcp19/blk_mem_gen_1_in_context.xdc] for cell 'top_flyinglogo/u1'
+Parsing XDC File [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/dcp21/cam_ov7670_ov7725_0_in_context.xdc] for cell 'design_1_cam_ov7670_ov7725_0_0'
+Finished Parsing XDC File [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/dcp21/cam_ov7670_ov7725_0_in_context.xdc] for cell 'design_1_cam_ov7670_ov7725_0_0'
+Parsing XDC File [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/dcp23/ov7725_regData_0_in_context.xdc] for cell 'design_1_ov7725_regData_0_0'
+Finished Parsing XDC File [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/dcp23/ov7725_regData_0_in_context.xdc] for cell 'design_1_ov7725_regData_0_0'
+Parsing XDC File [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/dcp25/vga_0_in_context.xdc] for cell 'design_1_vga_0_1'
+Finished Parsing XDC File [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/dcp25/vga_0_in_context.xdc] for cell 'design_1_vga_0_1'
+Parsing XDC File [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/dcp27/IICctrl_0_in_context.xdc] for cell 'design_1_IICctrl_0_0'
+Finished Parsing XDC File [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/dcp27/IICctrl_0_in_context.xdc] for cell 'design_1_IICctrl_0_0'
+Parsing XDC File [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/dcp29/ram_read_0_in_context.xdc] for cell 'design_1_ram_read_0_0'
+Finished Parsing XDC File [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/dcp29/ram_read_0_in_context.xdc] for cell 'design_1_ram_read_0_0'
+Parsing XDC File [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/dcp31/clk_wiz_0_in_context.xdc] for cell 'design_1_clk_wiz_0_0'
+Finished Parsing XDC File [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/dcp31/clk_wiz_0_in_context.xdc] for cell 'design_1_clk_wiz_0_0'
+Parsing XDC File [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/dcp33/blk_mem_gen_0_in_context.xdc] for cell 'design_1_blk_mem_gen_0_0'
+Finished Parsing XDC File [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/dcp33/blk_mem_gen_0_in_context.xdc] for cell 'design_1_blk_mem_gen_0_0'
+Parsing XDC File [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/dcp35/dcm_25m_in_context.xdc] for cell 'top_flyinglogo/u0'
+WARNING: [Constraints 18-619] A clock with name 'clk_in1' already exists, overwriting the previous clock with the same name. [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/dcp35/dcm_25m_in_context.xdc:1]
+Finished Parsing XDC File [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/dcp35/dcm_25m_in_context.xdc] for cell 'top_flyinglogo/u0'
+Parsing XDC File [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/constrs_1/new/shibir_xdc.xdc]
+Finished Parsing XDC File [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/constrs_1/new/shibir_xdc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/constrs_1/new/shibir_xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 673.523 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 673.523 ; gain = 419.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 673.523 ; gain = 419.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in1. (constraint file  D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/dcp35/dcm_25m_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_in1. (constraint file  D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/.Xil/Vivado-12324-LAPTOP-KM039FVS/dcp35/dcm_25m_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for design_1_IICctrl_0_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_blk_mem_gen_0_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_cam_ov7670_ov7725_0_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_clk_wiz_0_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_ov7725_regData_0_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_ram_read_0_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_vga_0_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for top_flyinglogo/u0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for top_flyinglogo/u1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 673.523 ; gain = 419.164
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/Clock_Divider_2.v:32]
+WARNING: [Synth 8-6014] Unused sequential element mult_g_for_y_18b_reg was removed.  [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/rgb_to_ycbcr.v:112]
+WARNING: [Synth 8-6014] Unused sequential element mult_b_for_y_18b_reg was removed.  [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/rgb_to_ycbcr.v:117]
+WARNING: [Synth 8-6014] Unused sequential element mult_r_for_y_18b_reg was removed.  [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/rgb_to_ycbcr.v:107]
+WARNING: [Synth 8-6014] Unused sequential element add_y_0_18b_reg was removed.  [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/rgb_to_ycbcr.v:122]
+WARNING: [Synth 8-6014] Unused sequential element add_y_1_18b_reg was removed.  [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/rgb_to_ycbcr.v:123]
+WARNING: [Synth 8-6014] Unused sequential element mult_b_for_y_18b_reg was removed.  [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/rgb_to_ycbcr.v:117]
+WARNING: [Synth 8-6014] Unused sequential element mult_g_for_y_18b_reg was removed.  [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/rgb_to_ycbcr.v:112]
+INFO: [Synth 8-5546] ROM "D10" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "D10" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "duan_1" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "D3" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "duan" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "D10" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clean" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "count" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/debounce.v:34]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/FSM.v:40]
+INFO: [Synth 8-5546] ROM "y_cnt" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element y_cnt_reg was removed.  [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/vga_640x480.v:63]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/top_flyinglogo.v:204]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/top_flyinglogo.v:204]
+INFO: [Synth 8-5546] ROM "rom_addr" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element rom_addr_reg was removed.  [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/top_flyinglogo.v:67]
+WARNING: [Synth 8-6014] Unused sequential element speed_cnt_reg was removed.  [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/top_flyinglogo.v:121]
+WARNING: [Synth 8-6014] Unused sequential element logo_x_reg was removed.  [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/top_flyinglogo.v:81]
+WARNING: [Synth 8-6014] Unused sequential element logo_y_reg was removed.  [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/top_flyinglogo.v:81]
+INFO: [Synth 8-5546] ROM "D10" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "duan" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'duan_reg' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/shumaguan.v:96]
+WARNING: [Synth 8-327] inferring latch for variable 'duan_reg' [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/shumaguan_duoshuzi.v:69]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 673.523 ; gain = 419.164
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 7     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 7     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 6     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 9     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 40    
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 4     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 5     
+	   5 Input      7 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 5     
+	  11 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 11    
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 22    
+	   5 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module design_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 2     
+Module Clock_Divider_2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module rgb_to_ycbcr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
+Module shifter 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 7     
++---Muxes : 
+	  11 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module divide 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module shumaguan 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                7 Bit    Registers := 4     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 4     
+	   5 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 1     
+Module button1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+Module button2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module button3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module boundry_tracking 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 6     
+Module button 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module FSM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 6     
+Module vga_640x480 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module debounce_vga 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module top_flyinglogo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module divide_duoshuzi 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module shifter_duoshuzi 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module shumaguan_duoshuzi 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      7 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "D10" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "D10" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "D10" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "button/debounce/count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "button/debounce/clean" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "top_flyinglogo/u2/y_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "top_flyinglogo/rom_addr" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element Clock_Divider_2/count_reg was removed.  [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/Clock_Divider_2.v:32]
+WARNING: [Synth 8-6014] Unused sequential element button/debounce/count_reg was removed.  [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/debounce.v:34]
+WARNING: [Synth 8-6014] Unused sequential element FSM/state_reg was removed.  [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/FSM.v:40]
+WARNING: [Synth 8-6014] Unused sequential element top_flyinglogo/u2/y_cnt_reg was removed.  [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/vga_640x480.v:63]
+WARNING: [Synth 8-6014] Unused sequential element top_flyinglogo/logo_x_reg was removed.  [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/top_flyinglogo.v:81]
+WARNING: [Synth 8-6014] Unused sequential element top_flyinglogo/logo_y_reg was removed.  [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/top_flyinglogo.v:81]
+WARNING: [Synth 8-6014] Unused sequential element top_flyinglogo/speed_cnt_reg was removed.  [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/top_flyinglogo.v:121]
+WARNING: [Synth 8-6014] Unused sequential element top_flyinglogo/rom_addr_reg was removed.  [D:/vivadoproject/project_2018070901/project_20180708/project_20180708.srcs/sources_1/new/top_flyinglogo.v:67]
+WARNING: [Synth 8-3331] design divide_duoshuzi has unconnected port gray[3]
+WARNING: [Synth 8-3331] design divide_duoshuzi has unconnected port gray[2]
+WARNING: [Synth 8-3331] design divide_duoshuzi has unconnected port gray[1]
+WARNING: [Synth 8-3331] design divide_duoshuzi has unconnected port gray[0]
+WARNING: [Synth 8-3331] design divide has unconnected port gray[3]
+WARNING: [Synth 8-3331] design divide has unconnected port gray[2]
+WARNING: [Synth 8-3331] design divide has unconnected port gray[1]
+WARNING: [Synth 8-3331] design divide has unconnected port gray[0]
+WARNING: [Synth 8-3331] design design_1 has unconnected port button_back
+WARNING: [Synth 8-3332] Sequential element (top_flyinglogo/speed_cnt_reg[7]) is unused and will be removed from module design_1.
+WARNING: [Synth 8-3332] Sequential element (top_flyinglogo/speed_cnt_reg[6]) is unused and will be removed from module design_1.
+INFO: [Synth 8-3886] merging instance 'rgb_to_ycbcr_inst/mult_b_for_y_18b_reg[0]' (FD) to 'rgb_to_ycbcr_inst/mult_b_for_y_18b_reg[1]'
+INFO: [Synth 8-3886] merging instance 'rgb_to_ycbcr_inst/mult_b_for_y_18b_reg[1]' (FD) to 'rgb_to_ycbcr_inst/mult_b_for_y_18b_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rgb_to_ycbcr_inst/mult_b_for_y_18b_reg[2]' (FD) to 'rgb_to_ycbcr_inst/mult_b_for_y_18b_reg[3]'
+INFO: [Synth 8-3886] merging instance 'rgb_to_ycbcr_inst/mult_b_for_y_18b_reg[3]' (FD) to 'rgb_to_ycbcr_inst/mult_b_for_y_18b_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rgb_to_ycbcr_inst/\mult_b_for_y_18b_reg[12] )
+INFO: [Synth 8-3886] merging instance 'rgb_to_ycbcr_inst/add_y_1_18b_reg[0]' (FD) to 'rgb_to_ycbcr_inst/add_y_1_18b_reg[3]'
+INFO: [Synth 8-3886] merging instance 'rgb_to_ycbcr_inst/add_y_1_18b_reg[1]' (FD) to 'rgb_to_ycbcr_inst/add_y_1_18b_reg[3]'
+INFO: [Synth 8-3886] merging instance 'rgb_to_ycbcr_inst/add_y_1_18b_reg[2]' (FD) to 'rgb_to_ycbcr_inst/add_y_1_18b_reg[3]'
+INFO: [Synth 8-3886] merging instance 'rgb_to_ycbcr_inst/add_y_1_18b_reg[3]' (FD) to 'rgb_to_ycbcr_inst/mult_b_for_y_18b_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rgb_to_ycbcr_inst/\mult_b_for_y_18b_reg[12] )
+WARNING: [Synth 8-3332] Sequential element (add_y_0_18b_reg[3]) is unused and will be removed from module rgb_to_ycbcr.
+WARNING: [Synth 8-3332] Sequential element (add_y_0_18b_reg[2]) is unused and will be removed from module rgb_to_ycbcr.
+WARNING: [Synth 8-3332] Sequential element (add_y_0_18b_reg[1]) is unused and will be removed from module rgb_to_ycbcr.
+WARNING: [Synth 8-3332] Sequential element (add_y_0_18b_reg[0]) is unused and will be removed from module rgb_to_ycbcr.
+WARNING: [Synth 8-3332] Sequential element (result_y_18b_reg[6]) is unused and will be removed from module rgb_to_ycbcr.
+WARNING: [Synth 8-3332] Sequential element (result_y_18b_reg[5]) is unused and will be removed from module rgb_to_ycbcr.
+WARNING: [Synth 8-3332] Sequential element (result_y_18b_reg[4]) is unused and will be removed from module rgb_to_ycbcr.
+WARNING: [Synth 8-3332] Sequential element (result_y_18b_reg[3]) is unused and will be removed from module rgb_to_ycbcr.
+WARNING: [Synth 8-3332] Sequential element (result_y_18b_reg[2]) is unused and will be removed from module rgb_to_ycbcr.
+WARNING: [Synth 8-3332] Sequential element (result_y_18b_reg[1]) is unused and will be removed from module rgb_to_ycbcr.
+WARNING: [Synth 8-3332] Sequential element (result_y_18b_reg[0]) is unused and will be removed from module rgb_to_ycbcr.
+WARNING: [Synth 8-3332] Sequential element (mult_b_for_y_18b_reg[12]) is unused and will be removed from module rgb_to_ycbcr.
+INFO: [Synth 8-3886] merging instance 'divider/B_reg[0]' (FDR) to 'divider/R_reg[0]'
+INFO: [Synth 8-3886] merging instance 'divider/B_reg[2]' (FDR) to 'divider/G_reg[2]'
+INFO: [Synth 8-3886] merging instance 'divider/B_reg[3]' (FDS) to 'divider/R_reg[3]'
+INFO: [Synth 8-3886] merging instance 'divider/G_reg[0]' (FDR) to 'divider/R_reg[0]'
+INFO: [Synth 8-3886] merging instance 'divider/G_reg[1]' (FDR) to 'divider/R_reg[1]'
+INFO: [Synth 8-3886] merging instance 'divider/G_reg[3]' (FDS) to 'divider/R_reg[3]'
+WARNING: [Synth 8-3332] Sequential element (count_f_reg[1]) is unused and will be removed from module boundry_tracking.
+WARNING: [Synth 8-3332] Sequential element (count_f_reg[0]) is unused and will be removed from module boundry_tracking.
+INFO: [Synth 8-3886] merging instance 'divide_duoshuzi/B_reg[0]' (FDR) to 'divide_duoshuzi/R_reg[0]'
+INFO: [Synth 8-3886] merging instance 'divide_duoshuzi/B_reg[2]' (FDR) to 'divide_duoshuzi/G_reg[2]'
+INFO: [Synth 8-3886] merging instance 'divide_duoshuzi/B_reg[3]' (FDS) to 'divide_duoshuzi/R_reg[3]'
+INFO: [Synth 8-3886] merging instance 'divide_duoshuzi/G_reg[0]' (FDR) to 'divide_duoshuzi/R_reg[0]'
+INFO: [Synth 8-3886] merging instance 'divide_duoshuzi/G_reg[1]' (FDR) to 'divide_duoshuzi/R_reg[1]'
+INFO: [Synth 8-3886] merging instance 'divide_duoshuzi/G_reg[3]' (FDS) to 'divide_duoshuzi/R_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rgb_to_ycbcr_inst/\add_y_1_18b_reg[13] )
+WARNING: [Synth 8-3332] Sequential element (add_y_1_18b_reg[13]) is unused and will be removed from module rgb_to_ycbcr.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 673.523 ; gain = 419.164
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_clk_wiz_0_0/clk_out1' to pin 'design_1_clk_wiz_0_0/bbstub_clk_out1/O'
+WARNING: [Synth 8-565] redefining clock 'clk_in1'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'top_flyinglogo/u0/clk_out1' to pin 'top_flyinglogo/u0/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 673.523 ; gain = 419.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 673.523 ; gain = 419.164
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 673.523 ; gain = 419.164
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \top_flyinglogo/u1  has unconnected pin wea[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \top_flyinglogo/u1  has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \top_flyinglogo/u1  has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \top_flyinglogo/u1  has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \top_flyinglogo/u1  has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \top_flyinglogo/u1  has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \top_flyinglogo/u1  has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \top_flyinglogo/u1  has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \top_flyinglogo/u1  has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \top_flyinglogo/u1  has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \top_flyinglogo/u1  has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \top_flyinglogo/u1  has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \top_flyinglogo/u1  has unconnected pin dina[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 673.523 ; gain = 419.164
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 673.523 ; gain = 419.164
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 673.523 ; gain = 419.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 673.523 ; gain = 419.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 673.523 ; gain = 419.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 673.523 ; gain = 419.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name  | RTL Name             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|rgb_to_ycbcr | i_h_sync_delay_3_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb_to_ycbcr | i_v_sync_delay_3_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++-------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------+----------+
+|      |BlackBox name       |Instances |
++------+--------------------+----------+
+|1     |IICctrl_0           |         1|
+|2     |blk_mem_gen_0       |         1|
+|3     |cam_ov7670_ov7725_0 |         1|
+|4     |clk_wiz_0           |         1|
+|5     |ov7725_regData_0    |         1|
+|6     |ram_read_0          |         1|
+|7     |vga_0               |         1|
+|8     |dcm_25m             |         1|
+|9     |blk_mem_gen_1       |         1|
++------+--------------------+----------+
+
+Report Cell Usage: 
++------+--------------------+------+
+|      |Cell                |Count |
++------+--------------------+------+
+|1     |IICctrl_0           |     1|
+|2     |blk_mem_gen_0       |     1|
+|3     |blk_mem_gen_1       |     1|
+|4     |cam_ov7670_ov7725_0 |     1|
+|5     |clk_wiz_0           |     1|
+|6     |dcm_25m             |     1|
+|7     |ov7725_regData_0    |     1|
+|8     |ram_read_0          |     1|
+|9     |vga_0               |     1|
+|10    |CARRY4              |    56|
+|11    |LUT1                |    89|
+|12    |LUT2                |   153|
+|13    |LUT3                |    79|
+|14    |LUT4                |   106|
+|15    |LUT5                |   118|
+|16    |LUT6                |   145|
+|17    |MUXF7               |     2|
+|18    |SRL16E              |     2|
+|19    |FDCE                |    13|
+|20    |FDPE                |     1|
+|21    |FDRE                |   294|
+|22    |FDSE                |    36|
+|23    |LD                  |    14|
+|24    |IBUF                |    16|
+|25    |OBUF                |    27|
++------+--------------------+------+
+
+Report Instance Areas: 
++------+---------------------+-------------------+------+
+|      |Instance             |Module             |Cells |
++------+---------------------+-------------------+------+
+|1     |top                  |                   |  1325|
+|2     |  rgb_to_ycbcr_inst  |rgb_to_ycbcr       |   223|
+|3     |  shifter            |shifter            |    46|
+|4     |  divider            |divide             |    38|
+|5     |  shumaguan          |shumaguan          |   105|
+|6     |  button1            |button1            |    33|
+|7     |  button2            |button2            |     5|
+|8     |  button3            |button3            |    12|
+|9     |  boundry_tracking   |boundry_tracking   |    42|
+|10    |  divide_duoshuzi    |divide_duoshuzi    |    42|
+|11    |  shifter_duoshuzi   |shifter_duoshuzi   |    58|
+|12    |  shumaguan_duoshuzi |shumaguan_duoshuzi |    47|
+|13    |  FSM                |FSM                |    14|
+|14    |  Clock_Divider_2    |Clock_Divider_2    |    73|
+|15    |  button             |button             |    58|
+|16    |    debounce         |debounce           |    54|
+|17    |  top_flyinglogo     |top_flyinglogo     |   302|
+|18    |    u2               |vga_640x480        |   138|
+|19    |    u3               |debounce_vga       |     4|
++------+---------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 673.523 ; gain = 419.164
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 13 critical warnings and 52 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 673.523 ; gain = 110.922
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 673.523 ; gain = 419.164
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 86 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  LD => LDCE: 14 instances
+
+118 Infos, 74 Warnings, 13 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 673.523 ; gain = 437.676
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint 'D:/vivadoproject/project_2018070901/project_20180708/project_20180708.runs/synth_1/design_1.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 673.523 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 11 10:48:42 2018...

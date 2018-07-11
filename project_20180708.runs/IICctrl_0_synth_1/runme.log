@@ -1,0 +1,319 @@
+
+*** Running vivado
+    with args -log IICctrl_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source IICctrl_0.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source IICctrl_0.tcl -notrace
+Command: synth_design -top IICctrl_0 -part xc7a35tcpg236-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12848 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 316.477 ; gain = 70.828
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'IICctrl_0' [d:/vivadoproject/project_20180708/project_20180708.srcs/sources_1/ip/IICctrl_0/synth/IICctrl_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'IICctrl' [d:/vivadoproject/project_20180708/project_20180708.srcs/sources_1/ip/IICctrl_0/sources_1/imports/src/IICctrl.v:21]
+	Parameter LUT_SIZE bound to: 170 - type: integer 
+	Parameter CLK_Freq bound to: 25000000 - type: integer 
+	Parameter I2C_Freq bound to: 10000 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [d:/vivadoproject/project_20180708/project_20180708.srcs/sources_1/ip/IICctrl_0/sources_1/imports/src/IICctrl.v:99]
+INFO: [Synth 8-638] synthesizing module 'I2C_Controller' [d:/vivadoproject/project_20180708/project_20180708.srcs/sources_1/ip/IICctrl_0/sources_1/imports/src/I2C_Controller.v:1]
+INFO: [Synth 8-256] done synthesizing module 'I2C_Controller' (1#1) [d:/vivadoproject/project_20180708/project_20180708.srcs/sources_1/ip/IICctrl_0/sources_1/imports/src/I2C_Controller.v:1]
+WARNING: [Synth 8-6014] Unused sequential element Config_Done_reg was removed.  [d:/vivadoproject/project_20180708/project_20180708.srcs/sources_1/ip/IICctrl_0/sources_1/imports/src/IICctrl.v:88]
+INFO: [Synth 8-256] done synthesizing module 'IICctrl' (2#1) [d:/vivadoproject/project_20180708/project_20180708.srcs/sources_1/ip/IICctrl_0/sources_1/imports/src/IICctrl.v:21]
+INFO: [Synth 8-256] done synthesizing module 'IICctrl_0' (3#1) [d:/vivadoproject/project_20180708/project_20180708.srcs/sources_1/ip/IICctrl_0/synth/IICctrl_0.v:57]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 356.555 ; gain = 110.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 356.555 ; gain = 110.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 356.555 ; gain = 110.906
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+WARNING: [Synth 8-6014] Unused sequential element SD_COUNTER_reg was removed.  [d:/vivadoproject/project_20180708/project_20180708.srcs/sources_1/ip/IICctrl_0/sources_1/imports/src/I2C_Controller.v:22]
+WARNING: [Synth 8-6014] Unused sequential element LUT_INDEX_reg was removed.  [d:/vivadoproject/project_20180708/project_20180708.srcs/sources_1/ip/IICctrl_0/sources_1/imports/src/IICctrl.v:89]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 402.621 ; gain = 156.973
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	  62 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	  59 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	  41 Input      1 Bit        Muxes := 5     
+	  60 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 33    
+	  59 Input      1 Bit        Muxes := 1     
+	  42 Input      1 Bit        Muxes := 4     
+	  19 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module I2C_Controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	  62 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	  59 Input      5 Bit        Muxes := 1     
+	  41 Input      1 Bit        Muxes := 5     
+	  60 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 30    
+	  59 Input      1 Bit        Muxes := 1     
+	  42 Input      1 Bit        Muxes := 4     
+	  19 Input      1 Bit        Muxes := 1     
+Module IICctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element inst/u_I2C_Controller/I2C_RDATA_reg was removed.  [d:/vivadoproject/project_20180708/project_20180708.srcs/sources_1/ip/IICctrl_0/sources_1/imports/src/I2C_Controller.v:68]
+WARNING: [Synth 8-6014] Unused sequential element inst/u_I2C_Controller/SD_COUNTER_reg was removed.  [d:/vivadoproject/project_20180708/project_20180708.srcs/sources_1/ip/IICctrl_0/sources_1/imports/src/I2C_Controller.v:22]
+WARNING: [Synth 8-6014] Unused sequential element inst/LUT_INDEX_reg was removed.  [d:/vivadoproject/project_20180708/project_20180708.srcs/sources_1/ip/IICctrl_0/sources_1/imports/src/IICctrl.v:89]
+INFO: [Synth 8-3886] merging instance 'inst/mI2C_CLK_DIV_reg[14]' (FDC) to 'inst/mI2C_CLK_DIV_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/mI2C_CLK_DIV_reg[11]' (FDC) to 'inst/mI2C_CLK_DIV_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/mI2C_CLK_DIV_reg[12]' (FDC) to 'inst/mI2C_CLK_DIV_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/mI2C_CLK_DIV_reg[13]' (FDC) to 'inst/mI2C_CLK_DIV_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/mI2C_CLK_DIV_reg[15] )
+INFO: [Synth 8-3332] Sequential element (inst/mI2C_CLK_DIV_reg[15]) is unused and will be removed from module IICctrl_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 497.703 ; gain = 252.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------+-------------------------------+---------------+----------------+
+|Module Name    | RTL Object                    | Depth x Width | Implemented As | 
++---------------+-------------------------------+---------------+----------------+
+|I2C_Controller | I2C_BIT                       | 64x1          | LUT            | 
+|IICctrl_0      | inst/u_I2C_Controller/I2C_BIT | 64x1          | LUT            | 
++---------------+-------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 497.703 ; gain = 252.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 503.086 ; gain = 257.438
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_0' to logic
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 503.086 ; gain = 257.438
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 503.086 ; gain = 257.438
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 503.086 ; gain = 257.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 503.086 ; gain = 257.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 503.086 ; gain = 257.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 503.086 ; gain = 257.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     1|
+|2     |LUT2  |     7|
+|3     |LUT3  |     7|
+|4     |LUT4  |    16|
+|5     |LUT5  |    25|
+|6     |LUT6  |    72|
+|7     |MUXF7 |     7|
+|8     |MUXF8 |     2|
+|9     |FDCE  |    33|
+|10    |FDPE  |     8|
++------+------+------+
+
+Report Instance Areas: 
++------+---------------------+---------------+------+
+|      |Instance             |Module         |Cells |
++------+---------------------+---------------+------+
+|1     |top                  |               |   178|
+|2     |  inst               |IICctrl        |   178|
+|3     |    u_I2C_Controller |I2C_Controller |   116|
++------+---------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 503.086 ; gain = 257.438
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 503.086 ; gain = 257.438
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 503.086 ; gain = 257.438
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+19 Infos, 6 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 570.891 ; gain = 334.824
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint 'D:/vivadoproject/project_20180708/project_20180708.runs/IICctrl_0_synth_1/IICctrl_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1030.105 ; gain = 459.215
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP d:/vivadoproject/project_20180708/project_20180708.srcs/sources_1/ip/IICctrl_0/IICctrl_0.xci
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/vivadoproject/project_20180708/project_20180708.runs/IICctrl_0_synth_1/IICctrl_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1034.176 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Jul  8 13:44:28 2018...

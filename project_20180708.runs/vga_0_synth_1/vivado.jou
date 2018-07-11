@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sun Jul  8 13:43:10 2018
+# Process ID: 9512
+# Current directory: D:/vivadoproject/project_20180708/project_20180708.runs/vga_0_synth_1
+# Command line: vivado.exe -log vga_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_0.tcl
+# Log file: D:/vivadoproject/project_20180708/project_20180708.runs/vga_0_synth_1/vga_0.vds
+# Journal file: D:/vivadoproject/project_20180708/project_20180708.runs/vga_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source vga_0.tcl -notrace
